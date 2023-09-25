@@ -1,14 +1,11 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useEffect } from "react";
 import "./styles.css";
 import ProductCard from "../../components/ProductCard";
 import axios from "axios";
-import { Drawer, Modal } from "antd";
-import { useNavigate } from "react-router-dom";
+import { Modal } from "antd";
 import { useCart } from "../../api/CartContext";
 import { notification } from "antd";
-import { UserContext } from "../../api/UserContext";
-import { DrawerContext } from "../../api/DrawerContext";
-import { Button, TextField } from "@mui/material";
+import { TextField } from "@mui/material";
 
 const Product = () => {
   const [products, setProducts] = useState([]);
@@ -16,7 +13,6 @@ const Product = () => {
   const [orderBy, setOrderBy] = useState("");
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState(null);
-  const { isDrawerVisible, setIsDrawerVisible } = useContext(DrawerContext);
   const { cart, setCart } = useCart();
   notification.config({
     placement: "bottomRight",
@@ -24,7 +20,6 @@ const Product = () => {
     duration: 3,
   });
 
-  const navigate = useNavigate();
 
   const toggleInCart = (product) => {
     const isProductInCart = cart.some((cartItem) => cartItem.id === product.id);
@@ -35,12 +30,6 @@ const Product = () => {
       setCart([...cart, product]);
     }
   };
-
-  const removeFromCart = (product) => {
-    setCart(cart.filter((cartItem) => cartItem.id !== product.id));
-  };
-
-  const total = cart.reduce((sum, product) => sum + product.price, 0);
 
   const fetchProducts = async () => {
     try {
@@ -58,10 +47,6 @@ const Product = () => {
     fetchProducts();
   }, [orderBy]);
 
-  const handleSearch = () => {
-    fetchProducts(searchTerm);
-  };
-
   const clearSearch = () => {
     setSearchTerm("");
     setOrderBy("");
@@ -71,24 +56,6 @@ const Product = () => {
   const showProductDetails = (product) => {
     setSelectedProduct(product);
     setIsModalVisible(true);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
-
-  const { isLoggedIn } = useContext(UserContext);
-
-  const proceedToCheckout = () => {
-    if (isLoggedIn) {
-      navigate("/checkout");
-    } else {
-      notification.error({
-        message: "Não autorizado",
-        description: "Você deve estar logado para prosseguir para o checkout.",
-      });
-      navigate("/login");
-    }
   };
 
   return (
@@ -115,7 +82,7 @@ const Product = () => {
           label="Buscar ferramenta..."
         />
         <div style={{display: 'flex', gap: '10px'}}>
-          <button onClick={handleSearch}>
+          <button onClick={() => fetchProducts(searchTerm)}>
             Buscar
           </button>
           <button onClick={clearSearch}>
@@ -142,7 +109,7 @@ const Product = () => {
       <Modal
         title="Detalhes do Produto"
         visible={isModalVisible}
-        onCancel={handleCancel}
+        onCancel={() => setIsModalVisible(false)}
         footer={null}
         centered
       >
@@ -159,29 +126,6 @@ const Product = () => {
           </>
         )}
       </Modal>
-      <Drawer
-        title="Seu Carrinho"
-        placement="bottom"
-        onClose={() => setIsDrawerVisible(false)}
-        visible={isDrawerVisible}
-      >
-        <ul>
-          {cart.map((product) => (
-            <li key={product.id}>
-              {product.heading} - R${product.price}
-              <Button
-                type="danger"
-                onClick={() => removeFromCart(product)}
-                style={{ marginLeft: "10px" }}
-              >
-                Remover
-              </Button>
-            </li>
-          ))}
-        </ul>
-        <h3>Total: R${total}/dia</h3>
-        <button onClick={proceedToCheckout}>Ir para Checkout</button>
-      </Drawer>
     </div>
   );
 };
