@@ -43,13 +43,14 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 Antes de rodar o projeto localmente, você deve configurar a seguinte variável de ambiente:
 
 - `REACT_APP_API_MAIN`: URL da API principal. Adicione este valor ao arquivo `.env` no diretório raiz do projeto.
-🛸 [Link repistório API](https://github.com/mateusgambaro/rent-tools-api)
+  
+🛸 [Link repositório API](https://github.com/mateusgambaro/rent-tools-api)
 
 ### Instalação
 
 1. Clone o repositório
    ```sh
-   git clone https://github.com/seu-username/AluguelFerramentasApp.git
+   git clone git@github.com:mateusgambaro/rent-tools-app.git
    
 2. Instale as dependências do projeto
    ```sh
