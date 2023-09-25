@@ -64,3 +64,8 @@ Antes de rodar o projeto localmente, você deve configurar a seguinte variável 
 ### Uso
    Após a instalação e execução, acesse http://localhost:3000 no seu navegador.
 
+### 🙆‍♂️ Login de teste
+  Você pode utilizar esse usuário para efetuar compras e visualizar os pedidos ou criar um novo.
+  **Email**: mateusgambaro@gmail.com
+  **Senha**: password1
+
