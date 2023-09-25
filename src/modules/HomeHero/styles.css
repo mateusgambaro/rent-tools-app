@@ -28,7 +28,7 @@
     justify-content: flex-end;
     overflow: hidden;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add shadow to image */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
     padding: 10px;
     max-width: 400px;  
     flex-shrink: 1;
@@ -80,16 +80,15 @@
     vertical-align: middle;
     letter-spacing: 2px;
     color: white;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  /* New shadow */
-    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* New transition */
-    cursor: pointer;  /* Indicates clickable area */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; 
+    cursor: pointer; 
   }
   
-  /* Hover effect for the button */
   .hero-text .show:hover {
     background: #bea619; 
-    transform: translateY(-3px);  /* Gives a subtle lift effect */
-    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.12);  /* Increase shadow on hover for depth */
+    transform: translateY(-3px); 
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.12);  
   }
   
   

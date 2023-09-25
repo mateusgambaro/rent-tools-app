@@ -37,7 +37,9 @@ function AppContent() {
   const proceedToCheckout = () => {
     if (isLoggedIn) {
       navigate("/checkout");
+      setIsDrawerVisible(false)
     } else {
+      setIsDrawerVisible(false)
       notification.error({
         message: "Não autorizado",
         description: "Você deve estar logado para prosseguir para o checkout.",
@@ -46,7 +48,6 @@ function AppContent() {
     }
   };
 
-  console.log("Cart", cart);
   return (
     <div className="App">
       <Drawer
