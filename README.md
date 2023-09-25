@@ -1,17 +1,12 @@
-# Aluguel de Ferramentas App 🛠
+# AlluTools 🛠
+## [Link para acessar o projeto](http://d1srmwp803c68a.cloudfront.net)
+### Deploy com AWS com S3 & CloudFront
 
 <div align="center">
   <img src="link-para-seu-logo-aqui.png" alt="Logo" width="150">
   <h3>Uma aplicação web moderna para aluguel de ferramentas</h3>
   <p>Selecione, adicione ao carrinho e alugue sua ferramenta desejada em poucos cliques!</p>
 </div>
-
-[![Colaboradores][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Estrelas][stars-shield]][stars-url]
-[![Problemas][issues-shield]][issues-url]
-[![Licença MIT][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 ### 📑 Sumário
 - [Sobre o Projeto](#sobre-o-projeto)
