@@ -1,0 +1,75 @@
+.product {
+    margin: 4rem 6rem;
+    margin-top: 10%;
+    color: #2a2a2a;
+  }
+  
+  .product h1 {
+    font-size: 3rem;
+    color: #2a2a2a;
+  }
+  
+  .looking-link {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    text-decoration: none;
+    background: #8010F6;
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    vertical-align: middle;
+    letter-spacing: 2px;
+    color: whitesmoke;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);  /* New shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; /* New transition */
+    cursor: pointer;  /* Indicates clickable area */
+  }
+  
+  .looking-link:hover {
+    background: #8c5dbe; 
+    transform: translateY(-3px);  /* Gives a subtle lift effect */
+    box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.12); 
+  }
+  
+  .productcard {
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  .show .whatsapp-icon {
+    font-size: 1.2rem;
+    color: #ffeddd;
+    vertical-align: middle; 
+    margin-right: 8px;    
+  }
+  
+  .texts {
+    display: flex;
+    margin-top: 10px;
+    height: 100%;
+    max-width: 400px;
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 25px; 
+    padding-right: 25px;
+    text-align: center;
+  }
+  
+  
+  @media screen and (max-width: 850px) {
+    .product {
+      margin: 4rem 2rem;
+    }
+    .plancard {
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
