@@ -3,9 +3,9 @@
 - **Acesse o projeto aqui:** [http://d1srmwp803c68a.cloudfront.net](http://d1srmwp803c68a.cloudfront.net)
 
 <div align="center">
-  <h3>Uma aplicação web moderna para aluguel de ferramentas</h3>
+  <h3>Uma aplicação web moderna com design responsivo para aluguel de ferramentas</h3>
   <p>Selecione, adicione ao carrinho e alugue sua ferramenta desejada em poucos cliques!</p>
-  <img src="./readme-images/home.jpeg" alt="Logo" width="150">
+  <img src="./readme-images/home.jpeg" alt="Logo">
 </div>
 
 ### 📑 Sumário
