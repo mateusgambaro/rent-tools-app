@@ -6,6 +6,10 @@
   <h3>Uma aplicação web moderna com design responsivo para aluguel de ferramentas</h3>
   <p>Selecione, adicione ao carrinho e alugue sua ferramenta desejada em poucos cliques!</p>
   <img src="./readme-images/home.jpeg" alt="Logo">
+  <img src="./readme-images/products.jpeg" alt="Logo">
+  <img src="./readme-images/mobile-home.jpeg" alt="Logo">
+  <img src="./readme-images/mobile-produts.jpeg" alt="Logo">
+  
 </div>
 
 ### 📑 Sumário
