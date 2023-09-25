@@ -19,9 +19,6 @@
   - [Pré-requisitos](#pré-requisitos)
   - [Instalação](#instalação)
 - [Uso](#uso)
-- [Contribuindo](#contribuindo)
-- [Contato](#contato)
-- [Agradecimentos](#agradecimentos)
 
 ## Sobre o Projeto
 
