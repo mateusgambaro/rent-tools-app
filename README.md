@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# AlluTools 🛠
+- **Deploy realizado com:** AWS S3 & CloudFront
+- **Acesse o projeto aqui:** [http://d1srmwp803c68a.cloudfront.net](http://d1srmwp803c68a.cloudfront.net)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+  <img src="link-para-seu-logo-aqui.png" alt="Logo" width="150">
+  <h3>Uma aplicação web moderna para aluguel de ferramentas</h3>
+  <p>Selecione, adicione ao carrinho e alugue sua ferramenta desejada em poucos cliques!</p>
+</div>
 
-## Available Scripts
+### 📑 Sumário
+- [Sobre o Projeto](#sobre-o-projeto)
+  - [Construído Com](#construído-com)
+- [Começando](#começando)
+  - [Pré-requisitos](#pré-requisitos)
+  - [Instalação](#instalação)
+- [Uso](#uso)
+- [Contribuindo](#contribuindo)
+- [Contato](#contato)
+- [Agradecimentos](#agradecimentos)
 
-In the project directory, you can run:
+## Sobre o Projeto
 
-### `npm start`
+A aplicação "Aluguel de Ferramentas App" foi desenvolvida com a intenção de simplificar o processo de aluguel de ferramentas. Com ela, os usuários podem:
+- Navegar por uma variedade de ferramentas
+- Ver especificações técnicas e detalhes
+- Adicionar produtos ao carrinho
+- Realizar um checkout, fornecendo sua identidade para a reserva
+- Consultar seus pedidos realizados
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Construído Com
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Este projeto foi desenvolvido utilizando as seguintes tecnologias:
+- [React JS](https://reactjs.org/)
+- [Material UI](https://mui.com/)
+- [Axios](https://axios-http.com/)
+- [AntD](https://ant.design/)
 
-### `npm test`
+## Começando
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Pré-requisitos
 
-### `npm run build`
+Antes de rodar o projeto localmente, você deve configurar a seguinte variável de ambiente:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- `REACT_APP_API_MAIN`: URL da API principal. Adicione este valor ao arquivo `.env` no diretório raiz do projeto.
+  
+🛸 [Link repositório API](https://github.com/mateusgambaro/rent-tools-api)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Instalação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone o repositório
+   ```sh
+   git clone git@github.com:mateusgambaro/rent-tools-app.git
+   
+2. Instale as dependências do projeto
+   ```sh
+   npm install
 
-### `npm run eject`
+3. Instale as dependências do projeto
+   ```sh
+   npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Uso
+   Após a instalação e execução, acesse http://localhost:3000 no seu navegador.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
