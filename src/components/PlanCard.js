@@ -12,9 +12,6 @@ export const PlanCard = (props) => {
         <p style={{ textIndent: "5px" }}>{props.secondText}</p>
         <p className="price">{props.price}</p>
       </div>
-      <button className={props.btnClass}>
-        Detalhes do plano
-      </button>
     </div>
   );
 };

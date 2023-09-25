@@ -6,6 +6,7 @@ import { Modal } from "antd";
 import { useCart } from "../../api/CartContext";
 import { notification } from "antd";
 import { TextField } from "@mui/material";
+import ProductDetails from "../../components/ProductDetails";
 
 const Product = () => {
   const [products, setProducts] = useState([]);
@@ -60,7 +61,7 @@ const Product = () => {
 
   return (
     <div className="product">
-      <h1 style={{ marginBottom: "10px", textAlign: "left" }}>Ferramentas</h1>
+      <h1 style={{ marginBottom: "10px" }}>Ferramentas</h1>
       <select onChange={(e) => setOrderBy(e.target.value)}>
         <option value="">Ordenar por</option>
         <option value="price">Preço</option>
@@ -116,13 +117,11 @@ const Product = () => {
         {selectedProduct && (
           <>
             <h4>{selectedProduct.title}</h4>
-            <p>{selectedProduct.content}</p>
-            <p>R${selectedProduct.price}/dia</p>
-            <p>{selectedProduct.volts}</p>
-            <p>{selectedProduct.watts}</p>
-            <p>{selectedProduct.usability}</p>
-            <p>{selectedProduct.condition}</p>
-            <p>{selectedProduct.brand}</p>
+            <ProductDetails name="Marca" info={`${selectedProduct.brand}`} />
+            <ProductDetails name="Voltagem" info={`${selectedProduct.volts}v`} />
+            <ProductDetails name="Potência" info={`${selectedProduct.watts}W`} />
+            <ProductDetails name="Usabilidade" info={`${selectedProduct.usability}`} />
+            <ProductDetails name="Condição" info={`${selectedProduct.condition}`} />
           </>
         )}
       </Modal>

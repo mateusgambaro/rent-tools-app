@@ -12,6 +12,8 @@ import { UserContext, UserProvider } from "./api/UserContext";
 import Profile from "./pages/Profile";
 import { DrawerContext, DrawerProvider } from "./api/DrawerContext";
 import { Button, Drawer, notification } from "antd";
+import { CartDetails } from "./components/CartDetails";
+import { FaTrash } from "react-icons/fa";
 
 function App() {
   return (
@@ -43,6 +45,8 @@ function AppContent() {
       navigate("/login");
     }
   };
+
+  console.log("Cart", cart);
   return (
     <div className="App">
       <Drawer
@@ -53,20 +57,26 @@ function AppContent() {
       >
         <ul>
           {cart.map((product) => (
-            <li key={product.id}>
-              {product.heading} - R${product.price}
+            <div key={product.id} className="cart-item-container">
+              <CartDetails
+                image={product.image}
+                name={product.heading}
+                price={`R$${product.price}/dia`}
+              />
               <Button
                 type="danger"
                 onClick={() => removeFromCart(product)}
-                style={{ marginLeft: '10px' }}
+                style={{ marginLeft: "10px" }}
               >
-                Remover
+                <FaTrash />
               </Button>
-            </li>
+            </div>
           ))}
         </ul>
-        <h3>Total: R${total}/dia</h3>
-        <button onClick={proceedToCheckout}>Ir para Checkout</button>
+        <h3 style={{ margin: "20px" }}>Total: R${total}/dia</h3>
+        <div style={{ display: "flex", justifyContent: 'center' }}>
+          <button onClick={proceedToCheckout}>Ir para Checkout</button>
+        </div>
       </Drawer>
       <ScrollToTop />
       <Routes>

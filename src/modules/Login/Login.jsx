@@ -52,7 +52,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
-      <h2>Login</h2>
+      <h2 style={{marginBottom: '10%'}}>Login</h2>
       <div className="form-group">
         <TextField
           label="Email"

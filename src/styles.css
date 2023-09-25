@@ -10,3 +10,9 @@
   text-align: center;
   overflow: hidden;
 }
+
+.cart-item-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

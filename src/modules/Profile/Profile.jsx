@@ -8,6 +8,7 @@ import "./styles.css";
 import { UserContext } from "../../api/UserContext";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@mui/material";
+import { formatDate } from '../../utils/DateFormat'
 
 const UserProfile = () => {
   const [userData, setUserData] = useState({});
@@ -99,7 +100,7 @@ const UserProfile = () => {
                     Preço: R${order.products?.price}/dia
                   </Typography>
                   <Typography variant="body2" color="text.secondary">
-                    Data: ${order.products?.createdAt}
+                  Data da compra: {formatDate(order.products?.createdAt)}
                   </Typography>
                 </CardContent>
               </Card>

@@ -6,6 +6,7 @@ import './styles.css'
 import { UserContext } from '../../api/UserContext';
 import { CircularProgress } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
+import { notification } from 'antd';
 
 const Register = () => {
   const [name, setName] = useState('');
@@ -16,6 +17,11 @@ const Register = () => {
   const [isLoading, setIsLoading] = useState(false); 
   const { setIsLoggedIn, setUserId } = useContext(UserContext);
   const navigate = useNavigate()
+  notification.config({
+    placement: "bottom",
+    bottom: 50,
+    duration: 5,
+  });
 
   const handleRegister = async () => {
     setIsLoading(true)
@@ -27,6 +33,10 @@ const Register = () => {
         document,
       });
       const { user } = response.data;
+      notification.success({
+        message: 'Seja Bem-vindo!',
+        description: 'Boas compras.'
+      })
       if (user.token) {
         localStorage.setItem('token', user.token);
         setIsLoggedIn(true);
@@ -34,6 +44,10 @@ const Register = () => {
         navigate('/products')
       }
     } catch (err) {
+      notification.error({
+        message: 'Erro!',
+        description: 'Houve um erro ao cadastrar o usuário'
+      })
       setError(err.response ? err.response.data.message : 'An error occurred');
       setIsLoading(false);
     }
