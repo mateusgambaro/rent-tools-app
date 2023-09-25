@@ -22,7 +22,7 @@
 
 ## Sobre o Projeto
 
-A aplicação "Aluguel de Ferramentas App" foi desenvolvida com a intenção de simplificar o processo de aluguel de ferramentas. Com ela, os usuários podem:
+A aplicação "AlluTools" foi desenvolvida com a intenção de simplificar o processo de aluguel de ferramentas. Com ela, os usuários podem:
 - Navegar por uma variedade de ferramentas
 - Ver especificações técnicas e detalhes
 - Adicionar produtos ao carrinho
