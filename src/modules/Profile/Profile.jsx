@@ -24,7 +24,7 @@ const UserProfile = () => {
       const user = localStorage.getItem("userId");
       try {
         const orderResponse = await axios.get(
-          `http://localhost:3000/order/${user}`,
+          `${process.env.REACT_APP_API_MAIN}/order/${user}`,
           {
             headers: {
               Authorization: `${token}`,
@@ -32,7 +32,7 @@ const UserProfile = () => {
           }
         );
         const userResponse = await axios.get(
-          `http://localhost:3000/user/${user}`,
+          `${process.env.REACT_APP_API_MAIN}/user/${user}`,
           {
             headers: {
               Authorization: `${token}`,

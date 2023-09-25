@@ -26,7 +26,7 @@ const Register = () => {
   const handleRegister = async () => {
     setIsLoading(true)
     try {
-      const response = await axios.post('http://localhost:3000/user', {
+      const response = await axios.post(`${process.env.REACT_APP_API_MAIN}/user`, {
         name,
         email,
         password,

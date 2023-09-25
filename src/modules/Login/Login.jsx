@@ -24,7 +24,7 @@ const Login = () => {
   const handleLogin = async () => {
     setIsLoading(true);
     try {
-      const response = await axios.post("http://localhost:3000/login", {
+      const response = await axios.post(`${process.env.REACT_APP_API_MAIN}/login`, {
         email,
         password,
       });

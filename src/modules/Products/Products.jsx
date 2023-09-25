@@ -34,7 +34,7 @@ const Product = () => {
 
   const fetchProducts = async () => {
     try {
-      let url = "http://localhost:3000/products?";
+      let url = `${process.env.REACT_APP_API_MAIN}/products?`;
       if (searchTerm) url += `search=${searchTerm}&`;
       if (orderBy) url += `orderBy=${orderBy}`;
       const response = await axios.get(url);

@@ -36,7 +36,7 @@ const Checkout = () => {
     };
     const token = localStorage.getItem("token");
     try {
-      await axios.post("http://localhost:3000/order", orderData, {
+      await axios.post(`${process.env.REACT_APP_API_MAIN}/order`, orderData, {
         headers: {
           Authorization: `${token}`,
           "Content-Type": "application/json",
