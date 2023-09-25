@@ -66,6 +66,6 @@ Antes de rodar o projeto localmente, você deve configurar a seguinte variável 
 
 ### 🙆‍♂️ Login de teste
   Você pode utilizar esse usuário para efetuar compras e visualizar os pedidos ou criar um novo.
-  **Email**: mateusgambaro@gmail.com
-  **Senha**: password1
+  - **Email**: mateusgambaro@gmail.com
+  - **Senha**: password1
 
