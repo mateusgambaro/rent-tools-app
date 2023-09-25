@@ -1,6 +1,6 @@
 # AlluTools 🛠
-## [Link para acessar o projeto](http://d1srmwp803c68a.cloudfront.net)
-### Deploy com AWS com S3 & CloudFront
+- **Deploy realizado com:** AWS S3 & CloudFront
+- **Acesse o projeto aqui:** [http://d1srmwp803c68a.cloudfront.net](http://d1srmwp803c68a.cloudfront.net)
 
 <div align="center">
   <img src="link-para-seu-logo-aqui.png" alt="Logo" width="150">
@@ -43,10 +43,22 @@ Este projeto foi desenvolvido utilizando as seguintes tecnologias:
 Antes de rodar o projeto localmente, você deve configurar a seguinte variável de ambiente:
 
 - `REACT_APP_API_MAIN`: URL da API principal. Adicione este valor ao arquivo `.env` no diretório raiz do projeto.
+🛸 [Link repistório API](https://github.com/mateusgambaro/rent-tools-api)
 
 ### Instalação
 
 1. Clone o repositório
    ```sh
    git clone https://github.com/seu-username/AluguelFerramentasApp.git
+   
+2. Instale as dependências do projeto
+   ```sh
+   npm install
+
+3. Instale as dependências do projeto
+   ```sh
+   npm start
+
+### Uso
+   Após a instalação e execução, acesse http://localhost:3000 no seu navegador.
 
