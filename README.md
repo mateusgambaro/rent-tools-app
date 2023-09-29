@@ -57,7 +57,7 @@ Antes de rodar o projeto localmente, você deve configurar a seguinte variável 
    ```sh
    npm install
 
-3. Instale as dependências do projeto
+3. Rode o projeto
    ```sh
    npm start
 
