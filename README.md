@@ -1,6 +1,6 @@
 # AlluTools 🛠
 - **Deploy realizado com:** AWS S3 & CloudFront
-- **Acesse o projeto aqui:** [http://d1srmwp803c68a.cloudfront.net](http://d1srmwp803c68a.cloudfront.net)
+- **Acesse o projeto aqui:** [http://d1srmwp803c68a.cloudfront.net](http://d1srmwp803c68a.cloudfront.net) (API interrompida por falta de pagamento 😁)
 
 <div align="center">
   <h3>Uma aplicação web moderna com design responsivo para aluguel de ferramentas</h3>
